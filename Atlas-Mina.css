@@ -60,5 +60,6 @@ img {
     border-radius: 8px;
     padding: 8px;
     margin: 10px auto;
+    min-width: 500px;
     max-width: 500px;
 }
