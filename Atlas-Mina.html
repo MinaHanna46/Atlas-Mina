@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mini Middle-East Atlas</title>
+        <meta name="description" content="A mini Atlas inspired by a school project">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Atlas-Mina.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="Title"> Moza-Atlas</h1>
+        </div>
+        <div id="body">
+            <label for="Continent" class="cmbbx-lbl"> Choose a continent!</label>
+            <select name="Continent" class="cmbbx" id="cntnnt">
+            <option value="Select">Select a continent</option>
+            <option value="Africa"> Africa</option>
+            <option value="Asia"> Asia</option>
+            </select>
+            <label for="country" class="cmbbx-lbl"> choose a country!</label>
+            <select name="country" class="cmbbx" id="cntry"></select>
+            <div id="labels">
+                <h3 id="capital"></h3>
+                <h3 id="water-resources"></h3>
+                <h3 id="ports"></h3>
+                <div id="_div">
+                    <h4>Map:</h4>
+                    <img id="map_img">
+                </div>
+                <div id="_div">
+                    <h4>Flag:</h4>
+                    <img id="flag_img">
+                </div>
+            </div>
+        </div>
+        <script type="module" defer src="Atlas-Mina.js"></script>
+    </body>
+</html>
