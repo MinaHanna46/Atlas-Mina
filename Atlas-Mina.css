@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: 0 0 2px black;
+    color: black;
 }
 #Title {
     background-color: gray;
