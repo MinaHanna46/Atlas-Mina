@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     text-shadow: 0 0 2px black;
     color: black;
+    user-select: none;
 }
 #Title {
     background-color: gray;
