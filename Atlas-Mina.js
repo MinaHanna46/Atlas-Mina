@@ -23,37 +23,23 @@ function makeDD(data , lvl2Filter){
         let option = document.createElement("option")
         option.textContent = item
         lvl2.appendChild(option)
-    })
-    
+    }) 
 }
 
 function applyDD(){
     let lvl1val = lvl1.value
     makeDD(myData, lvl1val)
-    
+    what()
+}
+
+function what(){
     if (lvl2.value === "Select a country") {
         Capital.textContent = "Capital:"
         wtrrsrcs.textContent = "Water Resources:"
         ports.textContent = "Ports:"
         mapImg.src = "images/Background2.png"
         flagImg.src = "images/middle_east_flag.jpg"
-    }else if (lvl2.value === "Egypt") {
-        Capital.textContent = "Capital: Cairo"
-        wtrrsrcs.textContent = "Water Resources: Nile river"
-        ports.textContent = "Ports: Port Said"
-        mapImg.src = "images/Egypt_map.jpg"
-        flagImg.src = "images/Egypt_flag.png"
-    }else if (lvl2.value === "Saudi-Arabia") {
-        Capital.textContent = "Capital: Riyadh"
-        wtrrsrcs.textContent = "Water Resources: Desalinated water"
-        ports.textContent = "Ports: Jeddah Islamic Port"
-        mapImg.src = "images/KSA_map.jpg"
-        flagImg.src = "images/KSA_flag.png"
-    }
-
-}
-function what(){
-    if (lvl2.value === "Kuwait") {
+    }else if (lvl2.value === "Kuwait") {
         Capital.textContent = "Capital: Kuwait City"
         wtrrsrcs.textContent = "Water Resources: Desalinated water"
         ports.textContent = "Ports: Port of Shuaiba"
