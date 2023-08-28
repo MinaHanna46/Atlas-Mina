@@ -29,10 +29,10 @@ function makeDD(data , lvl2Filter){
 function applyDD(){
     let lvl1val = lvl1.value
     makeDD(myData, lvl1val)
-    what()
+    loadContent()
 }
 
-function what(){
+function loadContent(){
     if (lvl2.value === "Select a country") {
         Capital.textContent = "Capital:"
         wtrrsrcs.textContent = "Water Resources:"
@@ -67,5 +67,5 @@ function what(){
 }
 
 lvl1.addEventListener("change", applyDD)
-lvl2.addEventListener("change", what)
+lvl2.addEventListener("change", loadContent)
 document.addEventListener("DOMContentLoaded", applyDD)
